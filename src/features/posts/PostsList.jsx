@@ -1,10 +1,10 @@
 import React from 'react';
 
+import { TimeAgo } from './TimeAgo';
+import { PostsForm } from './PostsForm';
 import { useSelector } from 'react-redux';
 import { PostAuthor } from './PostAuthor';
-import { PostsForm } from './PostsForm';
 import { selectAllPosts } from './postsSlice';
-import { TimeAgo } from './TimeAgo';
 
 const PostsList = () => {
     const posts = useSelector(selectAllPosts);
